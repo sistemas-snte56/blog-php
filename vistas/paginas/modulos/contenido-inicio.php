@@ -18,19 +18,19 @@ CONTENIDO INICIO
 					
 					<div class="col-12 col-lg-5">
 
-						<a href="articulos.html"><h5 class="d-block d-lg-none py-3">Type something here</h5></a>
+						<a href="articulos.php"><h5 class="d-block d-lg-none py-3">Type something here</h5></a>
 			
-						<a href="articulos.html"><img src="vistas/img/articulo01.png" alt="Lorem ipsum dolor sit amet" class="img-fluid" width="100%"></a>
+						<a href="articulos.php"><img src="vistas/img/articulo01.png" alt="Lorem ipsum dolor sit amet" class="img-fluid" width="100%"></a>
 
 					</div>
 
 					<div class="col-12 col-lg-7 introArticulo">
 						
-						<a href="articulos.html"><h4 class="d-none d-lg-block">Type something here</h4></a>
+						<a href="articulos.php"><h4 class="d-none d-lg-block">Type something here</h4></a>
 						
 						<p class="my-2 my-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, minus magni ipsam nisi accusantium ipsa! Incidunt neque ad, iure omnis saepe est.</p>
 
-						<a href="articulos.html" class="float-right">Leer Más</a>
+						<a href="articulos.php" class="float-right">Leer Más</a>
 
 						<div class="fecha">30.09.2018</div>
 
@@ -47,13 +47,13 @@ CONTENIDO INICIO
 					
 					<div class="col-12 col-lg-5">
 
-						<a href="articulos.html">
+						<a href="articulos.php">
 
 							<h5 class="d-block d-lg-none py-3">Type something here</h5>
 
 						</a>
 			
-						<a href="articulos.html">
+						<a href="articulos.php">
 
 							<img src="vistas/img/articulo02.png" alt="Lorem ipsum dolor sit amet" class="img-fluid" width="100%">
 
@@ -63,7 +63,7 @@ CONTENIDO INICIO
 
 					<div class="col-12 col-lg-7 introArticulo">
 						
-						<a href="articulos.html">
+						<a href="articulos.php">
 
 							<h4 class="d-none d-lg-block">Type something here</h4>
 
@@ -71,7 +71,7 @@ CONTENIDO INICIO
 						
 						<p class="my-2 my-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, minus magni ipsam nisi accusantium ipsa! Incidunt neque ad, iure omnis saepe est.</p>
 
-						<a href="articulos.html" class="float-right">Leer Más</a>
+						<a href="articulos.php" class="float-right">Leer Más</a>
 
 						<div class="fecha">30.09.2018</div>
 
@@ -95,13 +95,13 @@ CONTENIDO INICIO
 					
 					<div class="col-12 col-lg-5">
 
-						<a href="articulos.html">
+						<a href="articulos.php">
 
 							<h5 class="d-block d-lg-none py-3">Type something here</h5>
 
 						</a>
 			
-						<a href="articulos.html">
+						<a href="articulos.php">
 
 							<img src="vistas/img/articulo03.png" alt="Lorem ipsum dolor sit amet" class="img-fluid" width="100%">
 
@@ -111,7 +111,7 @@ CONTENIDO INICIO
 
 					<div class="col-12 col-lg-7 introArticulo">
 						
-						<a href="articulos.html">
+						<a href="articulos.php">
 
 							<h4 class="d-none d-lg-block">Type something here</h4>
 
@@ -119,7 +119,7 @@ CONTENIDO INICIO
 						
 						<p class="my-2 my-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, minus magni ipsam nisi accusantium ipsa! Incidunt neque ad, iure omnis saepe est.</p>
 
-						<a href="articulos.html" class="float-right">Leer Más</a>
+						<a href="articulos.php" class="float-right">Leer Más</a>
 
 						<div class="fecha">30.09.2018</div>
 
@@ -135,13 +135,13 @@ CONTENIDO INICIO
 					
 					<div class="col-12 col-lg-5">
 
-						<a href="articulos.html">
+						<a href="articulos.php">
 
 							<h5 class="d-block d-lg-none py-3">Type something here</h5>
 
 						</a>
 			
-						<a href="articulos.html">
+						<a href="articulos.php">
 
 							<img src="vistas/img/articulo04.png" alt="Lorem ipsum dolor sit amet" class="img-fluid" width="100%">
 
@@ -151,7 +151,7 @@ CONTENIDO INICIO
 
 					<div class="col-12 col-lg-7 introArticulo">
 						
-						<a href="articulos.html">
+						<a href="articulos.php">
 
 							<h4 class="d-none d-lg-block">Type something here</h4>
 
@@ -159,7 +159,7 @@ CONTENIDO INICIO
 						
 						<p class="my-2 my-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, minus magni ipsam nisi accusantium ipsa! Incidunt neque ad, iure omnis saepe est.</p>
 
-						<a href="articulos.html" class="float-right">Leer Más</a>
+						<a href="articulos.php" class="float-right">Leer Más</a>
 
 						<div class="fecha">30.09.2018</div>
 
@@ -175,13 +175,13 @@ CONTENIDO INICIO
 					
 					<div class="col-12 col-lg-5">
 
-						<a href="articulos.html">
+						<a href="articulos.php">
 
 							<h5 class="d-block d-lg-none py-3">Type something here</h5>
 
 						</a>
 			
-						<a href="articulos.html">
+						<a href="articulos.php">
 
 							<img src="vistas/img/articulo05.png" alt="Lorem ipsum dolor sit amet" class="img-fluid" width="100%">
 
@@ -191,7 +191,7 @@ CONTENIDO INICIO
 
 					<div class="col-12 col-lg-7 introArticulo">
 						
-						<a href="articulos.html">
+						<a href="articulos.php">
 
 							<h4 class="d-none d-lg-block">Type something here</h4>
 
@@ -199,7 +199,7 @@ CONTENIDO INICIO
 						
 						<p class="my-2 my-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, minus magni ipsam nisi accusantium ipsa! Incidunt neque ad, iure omnis saepe est.</p>
 
-						<a href="articulos.html" class="float-right">Leer Más</a>
+						<a href="articulos.php" class="float-right">Leer Más</a>
 
 						<div class="fecha">30.09.2018</div>
 
@@ -243,7 +243,7 @@ CONTENIDO INICIO
 						
 						<div class="w-100 w-xl-50 pr-3 pt-2">
 							
-							<a href="articulos.html">
+							<a href="articulos.php">
 
 								<img src="vistas/img/articulo10.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
 
@@ -253,7 +253,7 @@ CONTENIDO INICIO
 
 						<div>
 
-							<a href="articulos.html" class="text-secondary">
+							<a href="articulos.php" class="text-secondary">
 
 								<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
@@ -267,7 +267,7 @@ CONTENIDO INICIO
 						
 						<div class="w-100 w-xl-50 pr-3 pt-2">
 							
-							<a href="articulos.html">
+							<a href="articulos.php">
 
 								<img src="vistas/img/articulo09.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
 
@@ -277,7 +277,7 @@ CONTENIDO INICIO
 
 						<div>
 
-							<a href="articulos.html" class="text-secondary">
+							<a href="articulos.php" class="text-secondary">
 
 								<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
@@ -291,7 +291,7 @@ CONTENIDO INICIO
 						
 						<div class="w-100 w-xl-50 pr-3 pt-2">
 							
-							<a href="articulos.html">
+							<a href="articulos.php">
 
 								<img src="vistas/img/articulo08.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
 
@@ -301,7 +301,7 @@ CONTENIDO INICIO
 
 						<div>
 
-							<a href="articulos.html" class="text-secondary">
+							<a href="articulos.php" class="text-secondary">
 
 								<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
