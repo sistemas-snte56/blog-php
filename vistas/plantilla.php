@@ -81,7 +81,6 @@
 
 	include "paginas/modulos/footer.php";
 
-
 ?>
 
 <script src="vistas/js/script.js"></script>
