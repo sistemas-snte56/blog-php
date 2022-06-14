@@ -2,7 +2,7 @@
 
 	$blog = ControladorBlog::ctrMostrarBlog();
 
-	echo '<pre class="bg-white">'; print_r($blog); echo '</pre>';
+	//echo '<pre class="bg-white">'; print_r($blog['descripcion']); echo '</pre>';
 
 ?>
 
@@ -15,11 +15,25 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Juanito Travel</title>
+	<title><?php echo $blog['titulo'] ?></title>
 
-	<meta name="description" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
+	<meta name="description" content="<?php echo $blog['descripcion'] ?>">
+	<?php
 
-	<link rel="icon" href="vistas/img/icono.jpg">
+		$palabras_claves = json_decode($blog['palabras_claves'],true);
+		$p_claves = "";
+		foreach ($palabras_claves as $key => $value) {
+			$p_claves .= $value . ", ";
+		}
+
+		#Extraer la última coma de la cadena de textos de $p_claves
+		$p_claves = substr($p_claves, 0, -2);
+
+		//echo '<pre class="bg-white">'; print_r($p_claves); echo '</pre>';
+	?>
+	<meta name="keywords" content="<?php echo $p_claves ?>">
+
+	<link rel="icon" href="<?php echo $blog['icono'] ?>">
 
 	<!--=====================================
 	PLUGINS DE CSS

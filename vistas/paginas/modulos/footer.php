@@ -91,36 +91,31 @@ FOOTER
 				<div class="p-0 w-100 pt-2">
 				
 					<ul class="d-flex justify-content-left p-0">
-						
-						<li>
-							<a href="https://www.facebook.com" target="_blank">
-								<i class="fab fa-facebook-f lead text-white mr-3 mr-sm-4"></i>
-							</a>
-						</li>
+
+					
+					<?php
+
+						$redesSociales =  json_decode($blog['redes_sociales'], true);
+
+						foreach ($redesSociales as $key => $value) {
+
+					?>
 
 						<li>
-							<a href="#" target="_blank">
-								<i class="fab fa-instagram lead text-white mr-3 mr-sm-4"></i>
+							<a href="<?php echo $value["url"]?>" target="_blank">
+								<i class="<?php echo $value["icon"]?> lead text-white mr-3 mr-sm-4"></i>
 							</a>
-						</li>
+						</li>					
 
-						<li>
-							<a href="#" target="_blank">
-								<i class="fab fa-twitter lead text-white mr-3 mr-sm-4"></i>
-							</a>
-						</li>
 
-						<li>
-							<a href="#" target="_blank">
-								<i class="fab fa-youtube lead text-white mr-3 mr-sm-4"></i>
-							</a>
-						</li>
+					<?php
+						}
 
-						<li>
-							<a href="#" target="_blank">
-								<i class="fab fa-snapchat-ghost lead text-white mr-3 mr-sm-4"></i>
-							</a>
-						</li>
+					?>	
+
+
+
+
 
 					</ul>
 
