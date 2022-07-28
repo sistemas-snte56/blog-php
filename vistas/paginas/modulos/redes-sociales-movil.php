@@ -6,26 +6,21 @@ REDES SOCIALES PARA MÓVIL
 				
 	<ul class="d-flex justify-content-center p-0">
 
+		<?php 
 
-		<?php
-
-			$redesSociales =  json_decode($blog['redes_sociales'], true);
-
+			$redesSociales = json_decode($blog["redes_sociales"], true);
+			
 			foreach ($redesSociales as $key => $value) {
 
-			?>
+				echo '<li>
+						<a href="'.$value["url"].'" target="_blank">
+							<i class="'.$value["icono"].' lead rounded-circle text-white mr-3 mr-sm-4"></i>
+						</a>
+					</li>';
 
-			<li>
-				<a href="<?php echo $value["url"]?>" target="_blank">
-					<i class="<?php echo $value["icon"]?> lead rounded-circle text-white mr-3 mr-sm-4"></i>
-				</a>
-			</li>					
-
-
-		<?php
 			}
 
-		?>	
+		?>
 
 	</ul>
 

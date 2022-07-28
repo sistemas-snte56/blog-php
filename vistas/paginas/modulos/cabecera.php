@@ -11,9 +11,9 @@ CABECERA
 			<!-- LOGO -->
 			<div class="col-10 col-sm-11 col-md-8 pt-1 pt-lg-3 p-xl-0">
 				
-				<a href="index.html">
+				<a href="<?php echo $blog["dominio"]; ?>">
 					
-					<img src="<?php echo $blog['logo'] ?>" alt="Logo de Juanito Travel" class="img-fluid logotipo">
+					<img src="<?php echo $blog["dominio"];?><?php echo $blog["logo"]; ?>" alt="Logo de Juanito Travel" class="img-fluid logotipo">
 
 				</a>
 
@@ -24,25 +24,18 @@ CABECERA
 				
 				<ul class="d-flex justify-content-end pt-3 mt-1">
 
-					<?php
+					<?php 
 
-						$redesSociales =  json_decode($blog['redes_sociales'], true);
+					$redesSociales = json_decode($blog["redes_sociales"], true);
+					
+					foreach ($redesSociales as $key => $value) {
 						
-
-						//echo '<pre class="bg-white">'; print_r($redesSociales); echo '</pre>';
-
-						foreach ($redesSociales as $key => $value) {
-					
-					?>
-						<li>
-							<a href="<?php echo $value["url"]?>" target="_blank">
-								<i class="<?php echo $value["icon"]?> lead rounded-circle text-white mr-1"></i>
-							</a>
-						</li>					
-
-					
-					<?php
-						}
+						echo '<li>
+								<a href="'.$value["url"].'" target="_blank">
+									<i class="'.$value["icono"].' lead rounded-circle text-white mr-1"></i>
+								</a>
+							</li>';
+					}
 
 					?>
 
@@ -71,13 +64,13 @@ CABECERA
 				
 				<div class="input-group float-right w-50 pl-xl-5 pb-3">
 					
-					<input type="text" class="form-control" placeholder="Buscar">
+					<input type="text" class="form-control buscador text-lowercase" placeholder="Buscar">
 
 					<div class="input-group-append">
 						
 						<span class="input-group-text bg-primary border-0" style="cursor:pointer">
 							
-							<i class="fas fa-search"></i>
+							<i class="fas fa-search buscar"></i>
 
 						</span>
 
