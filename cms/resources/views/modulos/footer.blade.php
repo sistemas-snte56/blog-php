@@ -1,6 +1,8 @@
 <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.1.0
+        Todos los derechos reservados.
     </div>
-    <strong>Copyright © 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-  </footer>
+    <strong>Copyright © @php
+        echo date("Y");
+    @endphp <a href="{{ substr(url('/'),0,-11) }}">Blog viajero</a>.</strong>  
+</footer>

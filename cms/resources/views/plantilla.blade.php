@@ -33,7 +33,7 @@
     <div class="wrapper">
         @include('modulos.header')
         @include('modulos.sidebar')
-        @include('paginas.inicio')
+        @yield('content')
         @include('modulos.footer')
     </div>
 </body>
