@@ -33,15 +33,37 @@ Route::get('/', function () {
 // Route::view('/categorias','paginas.categorias');
 // Route::view('/opiniones','paginas.opiniones');
 
-Route::get('/', [BlogController::class, 'index']);
-Route::get('/administradores', [AdministradoresController::class, 'index']);
-Route::get('/categorias', [CategoriasController::class, 'index']);
-Route::get('/articulos', [ArticulosController::class, 'index']);
-Route::get('/opiniones', [OpinionesController::class, 'index']);
-Route::get('/banner', [BannerController::class, 'index']);
-Route::get('/anuncios', [AnunciosController::class, 'index']);
+// Route::get('/', [BlogController::class, 'index']);
+// Route::get('/administradores', [AdministradoresController::class, 'index']);
+// Route::get('/categorias', [CategoriasController::class, 'index']);
+// Route::get('/articulos', [ArticulosController::class, 'index']);
+// Route::get('/opiniones', [OpinionesController::class, 'index']);
+// Route::get('/banner', [BannerController::class, 'index']);
+// Route::get('/anuncios', [AnunciosController::class, 'index']);
 
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// RUTAS QUE INCLUYEN TODOS LOS MÉTODOS HTTP
+
+/*
+    Route::resource('/', BlogController::class);
+    Route::resource('/administradores', AdministradoresController::class);
+    Route::resource('/categorias', CategoriasController::class);
+    Route::resource('/articulos', ArticulosController::class);
+    Route::resource('/opiniones', OpinionesController::class);
+    Route::resource('/banner', BannerController::class);
+    Route::resource('/anuncios', AnunciosController::class);
+*/
+    
+Route::resources([
+    '/'=> BlogController::class,
+    'administradores'=> AdministradoresController::class,
+    'categorias'=> CategoriasController::class,
+    'articulos'=> ArticulosController::class,
+    'opiniones'=> OpinionesController::class,
+    'banner'=> BannerController::class,
+    'anuncios'=> AnunciosController::class,
+]);
