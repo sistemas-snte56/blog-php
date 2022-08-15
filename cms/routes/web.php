@@ -20,10 +20,6 @@ use App\Http\Controllers\AnunciosController;
 |
 */
 
-Route::get('/', function () {
-    return view('plantilla');
-});
-
 // Agregar la página como contenido dinamico
 // Route::view('','paginas.blog');
 // Route::view('/administradores','paginas.administradores');
@@ -41,13 +37,6 @@ Route::get('/', function () {
 // Route::get('/banner', [BannerController::class, 'index']);
 // Route::get('/anuncios', [AnunciosController::class, 'index']);
 
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-// RUTAS QUE INCLUYEN TODOS LOS MÉTODOS HTTP
-
 /*
     Route::resource('/', BlogController::class);
     Route::resource('/administradores', AdministradoresController::class);
@@ -57,7 +46,16 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::resource('/banner', BannerController::class);
     Route::resource('/anuncios', AnunciosController::class);
 */
-    
+
+Route::get('/', function () {
+    return view('plantilla');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// RUTAS QUE INCLUYEN TODOS LOS MÉTODOS HTTP   
 Route::resources([
     '/'=> BlogController::class,
     'administradores'=> AdministradoresController::class,
