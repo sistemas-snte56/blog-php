@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Articulos;
+use App\Models\Blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
@@ -15,8 +16,9 @@ class ArticulosController extends Controller
      */
     public function index()
     {
+        $blog = Blog::all(); // Traemos todos los registros
         $articulos = Articulos::all();
-        return View::make('paginas.articulos')->with('articulos',$articulos);
+        return View::make('paginas.articulos')->with('articulos',$articulos)->with('blog' , $blog);
     }
 
     /**

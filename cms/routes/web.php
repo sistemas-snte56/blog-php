@@ -58,6 +58,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // RUTAS QUE INCLUYEN TODOS LOS MÉTODOS HTTP   
 Route::resources([
     '/'=> BlogController::class,
+    '/blog'=> BlogController::class,
     'administradores'=> AdministradoresController::class,
     'categorias'=> CategoriasController::class,
     'articulos'=> ArticulosController::class,

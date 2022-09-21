@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Categorias;
+use App\Models\Blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
@@ -15,8 +16,9 @@ class CategoriasController extends Controller
      */
     public function index()
     {
+        $blog = Blog::all(); // Traemos todos los registros
         $categorias =  Categorias::all();
-        return View::make('paginas.categorias')->with('categorias',$categorias);
+        return View::make('paginas.categorias')->with('categorias',$categorias)->with('blog' , $blog);
     }
 
     /**

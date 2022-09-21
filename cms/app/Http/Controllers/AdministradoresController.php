@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Administradores;
+use App\Models\Blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
@@ -16,10 +17,11 @@ class AdministradoresController extends Controller
     public function index()
     {
         $administradores = Administradores::all();
+        $blog = Blog::all(); // Traemos todos los registros
 
         //return view('paginas.administradores', array('administradores' => $administradores));
 
-        return View::make('paginas.administradores')->with('administradores', $administradores);
+        return View::make('paginas.administradores')->with('administradores', $administradores)->with('blog' , $blog);
     }
 
     /**

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Opiniones;
+use App\Models\Blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
@@ -15,8 +16,9 @@ class OpinionesController extends Controller
      */
     public function index()
     {
+        $blog = Blog::all(); // Traemos todos los registros
         $opiniones = Opiniones::all();
-        return View::make('paginas.opiniones')->with('opiniones',$opiniones);
+        return View::make('paginas.opiniones')->with('opiniones',$opiniones)->with('blog' , $blog);
     }
 
     /**

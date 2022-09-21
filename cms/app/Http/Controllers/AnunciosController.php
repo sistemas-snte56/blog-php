@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Anuncios;
+use App\Models\Blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
@@ -15,8 +16,9 @@ class AnunciosController extends Controller
      */
     public function index()
     {
+        $blog = Blog::all(); // Traemos todos los registros
         $anuncios = Anuncios::all();
-        return View::make('paginas.anuncios')->with('anuncios',$anuncios);
+        return View::make('paginas.anuncios')->with('anuncios',$anuncios)->with('blog' , $blog);
     }
 
     /**

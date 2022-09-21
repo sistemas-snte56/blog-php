@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Banner;
+use App\Models\Blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
@@ -15,8 +16,9 @@ class BannerController extends Controller
      */
     public function index()
     {
+        $blog = Blog::all(); // Traemos todos los registros
         $banner = Banner::all();
-        return View::make ('paginas.banner')->with('banner', $banner);
+        return View::make ('paginas.banner')->with('banner', $banner)->with('blog' , $blog);
     }
 
     /**
