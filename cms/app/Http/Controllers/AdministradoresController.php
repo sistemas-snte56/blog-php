@@ -51,7 +51,7 @@ class AdministradoresController extends Controller
      * @param  \App\Models\Administradores  $administradores
      * @return \Illuminate\Http\Response
      */
-    public function show(Administradores $administradores)
+    public function show($id)
     {
         //
     }

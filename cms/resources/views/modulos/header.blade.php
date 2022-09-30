@@ -10,14 +10,29 @@
     <ul class="navbar-nav ml-auto">
         <li class="nav-item">
             <a class="nav-link">
-                Hola, Vicente Júarez
+                Hola, Nombre Completo
             </a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="#" role="button">
+            <a class="nav-link" href="{{ route('logout') }}" role="button" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 <strong>Cerrar sesión</strong>  <i class="fas fa-sign-out-alt"></i>
             </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+
+
+
+
         </li>
     </ul>
+
+
+
+
+
+
+
 </nav>

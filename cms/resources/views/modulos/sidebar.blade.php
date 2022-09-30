@@ -22,11 +22,11 @@
                     <!-- Sidebar user (optional) -->
                     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                         <div class="image">
-                            <img src="{{ url('/vistas/img/usuarios/vic.jpg') }}" class="img-circle elevation-2"
+                            <img src="{{ url('/') }}/{{ $item->foto }} " class="img-circle elevation-2"
                                 alt="Vicjurez">
                         </div>
                         <div class="info">
-                            <a href="#" class="d-block">Vicente Júarez</a>
+                            <a href="#" class="d-block">Vicente</a>
                         </div>
                     </div>
 

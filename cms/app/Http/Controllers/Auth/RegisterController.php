@@ -29,7 +29,8 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    // protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = '/administradores';
 
     /**
      * Create a new controller instance.
@@ -51,6 +52,8 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
+            'name_ap' => ['required', 'string', 'max:255'],
+            'name_am' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
@@ -66,8 +69,12 @@ class RegisterController extends Controller
     {
         return User::create([
             'name' => $data['name'],
+            'name_ap' => $data['name_ap'],
+            'name_am' => $data['name_am'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'foto' => 'img/administradores/default.png',
+            'rol' => 'administrador',
         ]);
     }
 }
